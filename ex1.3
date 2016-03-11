@@ -2,13 +2,10 @@
 (define (sum-of-square a b)
   (+ (square a) (square b)))
 
-#TODO
-
 (define (2biggest a b c)
-  (cond ((and (< a b) (< a c))
-          (sum-of-square b c))
-        ((and (< b a) (< b c))
-          (sum-of-square a c))
-        ((and (< c a) (< c b))
-          (sum-of-square a b))
-        (else 'there are no two equal numbers')))
+  (cond ((and (< a b) (< a c)) (sum-of-square b c))
+        ((and (< b a) (< b c)) (sum-of-square a c))
+        ((and (< c a) (< c b)) (sum-of-square a b))
+        (else 99)))
+
+#todo how to return 'text string'
